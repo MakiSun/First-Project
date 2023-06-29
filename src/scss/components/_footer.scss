@@ -1,0 +1,53 @@
+.footer {
+  background-color: $accent-color;
+}
+
+.footer__container {
+  padding: 0 50px;
+}
+
+.footer__content {
+  @include flex-j-end;
+  padding: 80px 0 60px 0;
+  flex-wrap: wrap;
+  @include xs {
+    text-align: center;
+    flex-direction: column;
+    padding: 60px 0 0 0;
+  }
+}
+
+.footer__info {
+  margin-bottom: 40px;
+  @include sm {
+    text-align: center;
+    flex-basis: 50%;
+  }
+}
+
+
+.footer__title {
+  span {
+    font-family: $font-family3;
+  }
+}
+
+.footer__title {
+  display: inline-block;
+  align-items: center;
+  color: $white-color;
+  font-size: 18px;
+  margin-bottom: 30px;
+  @include xs {
+    font-size: 20px;
+  }
+}
+.footer__link {
+  display: inline-block;
+  font-size: 16px;
+  color: $footer-color;
+  margin-bottom: 20px;
+  @include xs {
+    font-size: 18px;
+  }
+}

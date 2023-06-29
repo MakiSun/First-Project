@@ -1,0 +1,157 @@
+.hero {
+  background-image: url(../img/header/Ellipse.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 65px);
+  margin-bottom: 120px;
+  @include xs {
+    margin-bottom: 100px;
+  }
+
+  .hero__container {
+    position: relative;
+    @include flex-all-sb;
+    @include lg {
+      padding: 0 40px;
+    }
+    @include sm {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
+
+.hero__info {
+  margin: 0 50px;
+  @include sm {
+    text-align: center;
+    padding-top: 100px;
+  }
+  @include xs {
+    padding-top: 150px
+  }
+}
+
+
+
+.hero__title {
+  @include flex-v-center;
+  text-wrap: nowrap;
+  font-family: $font-family2;
+  font-size: 45px;
+  color: $price-color;
+  padding-bottom: 30px;
+
+  @include md {
+    font-size: 35px;
+  }
+
+  @include sm {
+    @include  inline-center-between;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: $line-color;
+    left: 20px;
+
+    @include sm {
+      display: none;
+    }
+  }
+}
+
+
+
+.hero__subtitle {
+  font-weight: 300;
+  font-size: 18px;
+  color: $price-color;
+  padding-bottom: 40px;
+  @include md {
+    font-size: 27px;
+  }
+}
+
+.hero__link {
+  display: inline-block;
+  padding: 20px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  color: $white-color;
+  background: $accent-color;
+  @include sm {
+    font-size: 21px
+  }
+}
+
+.hero__article {
+  @include flex-h-center;
+  position: relative;
+}
+
+.hero__img {
+  flex: 0 1 72%;
+  position: relative;
+  margin: 0 auto;
+  top: 120px;
+  left: 0;
+  @include md {
+    flex: 0 1 100%;
+  }
+  @include sm {
+    top: 50px;
+  }
+}
+
+.hero__price-left {
+  position: relative;
+  @include flex-v-center;
+  margin-bottom: 50px;
+  text-wrap: nowrap;
+  font-family: $font-family2;
+  font-size: 16px;
+
+  @include md {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background-color: #8B8371;
+    margin-left: 10px;
+
+    @include md {
+      display: none;
+    }
+  }
+}
+
+
+.hero__price {
+  @include flex-v-center;
+  font-family: $font-family2;
+  text-wrap: nowrap;
+  font-size: 16px;
+  align-self: flex-end;
+  @include md {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    margin-right: 10px;
+    background-color: $line-color;
+    @include md {
+      display: none;
+    }
+  }
+}
+

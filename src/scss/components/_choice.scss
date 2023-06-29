@@ -1,0 +1,109 @@
+.choice {
+  padding-bottom: 120px;
+  @include xs {
+    padding: 60px;
+  }
+  .choice__title {
+    text-align: center;
+    font-family: $font-family2;
+    font-size: 32px;
+    @include md {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.choice__container {
+  @include xs {
+    padding: 0;
+  }
+}
+
+.choice__item {
+  text-align: end;
+  margin-bottom: 25px;
+  @include md {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .choice__link {
+    font-family: $font-family1;
+    font-weight: 500;
+    font-size: 16px;
+    color: $black-color;
+    padding-bottom: 10px;
+    border-bottom: 1px $border-color solid;
+    @include sm {
+      font-size: 18px;
+    }
+  }
+}
+
+.choice__wrapp {
+  @include flex-all-sb;
+  @include md {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.choice__card {
+  position: relative;
+}
+
+.choice__logo {
+  font-family: $font-family3;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 18px;
+  }
+}
+
+.choice__price {
+  color: $price-color;
+  font-family: $font-family2;
+  font-size: 14px;
+  @include md {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.choice__img {
+  background-image: url('../img/choice/circle.png');
+  background-repeat: no-repeat;
+}
+
+.choice__subtitle {
+  @include flex-v-center;
+  font-size: 16px;
+  font-family: $font-family2;
+
+  @include md {
+    font-size: 16px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  &::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: $line-color;
+    margin-right: 10px;
+    @include xs {
+      height: 2px;
+    }
+  }
+}
+
+
+

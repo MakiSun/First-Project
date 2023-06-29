@@ -1,0 +1,15 @@
+// Базові підключення
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// Подключення компонентів
+@import "./components/header";
+@import "./components/hero";
+@import "./components/choice";
+@import "./components/about";
+@import "./components/social";
+@import "./components/footer";
+
+

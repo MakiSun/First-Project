@@ -1,0 +1,142 @@
+.about {
+  background-image: url('../../img/about/bg.png');
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 50px 0;
+  margin-bottom: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: $block-color;
+    z-index: 1;
+    @include sm {
+      width: 14%;
+    }
+    @include xs {
+      display: none;
+    }
+  }
+}
+
+
+.about__container {
+  @include flex-v-center;
+  @include sm {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.about__slider {
+  position: relative;
+  margin-right: 70px;
+  max-width: 521px;
+  @include sm {
+    max-width: 100%;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+}
+.swiper {
+  position: relative;
+}
+
+.slider__buttons {
+  @include flex-all-sb;
+  position: absolute;
+  right: 0%;
+  bottom: -12%;
+  @include sm {
+    position: absolute;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10%;
+  }
+
+
+}
+
+.slider__button-prev,
+.slider__button-next {
+  cursor: pointer;
+}
+.slider__button-prev {
+  order: 2;
+}
+
+.slider__button-next {
+  order: 1;
+}
+
+.slider__icon-arrow {
+  width: 10px;
+  height: 13px;
+  @include sm {
+    width: 15px;
+    height: 20px;
+  }
+}
+
+.left {
+  transform: rotate(-180deg);
+}
+
+.slider__num {
+  padding: 0 20px;
+  font-size: 20px;
+  @include sm {
+    font-size: 25px;
+  }
+}
+
+
+.about__content {
+  max-width: 100%;
+  @include sm {
+    width: 400px;
+  }
+}
+
+.about__title {
+  font-family: $font-family2;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 43px;
+  margin-bottom: 38px;
+}
+
+.about__subtitle {
+  font-family: $font-family1;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 43px;
+}
+
+.about__actions {
+  display: inline-block;
+}
+
+.about__link {
+  display: block;
+  font-family: $font-family1;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: $white-color;
+  background-color: $addit-color;
+  padding: 27px 38px;
+  @include sm {
+    margin-bottom: 40px;
+  }
+}

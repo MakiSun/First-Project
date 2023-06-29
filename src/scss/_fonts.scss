@@ -1,0 +1,13 @@
+// Roboto
+@include font-face("Roboto", "../fonts/RobotoLight", 300, normal);
+@include font-face("Roboto", "../fonts/RobotoRegular", 400, normal);
+@include font-face("Roboto", "../fonts/RobotoMedium", 500, normal);
+@include font-face("Roboto", "../fonts/RobotoBold", 700, normal);
+
+// Prata
+@include font-face("Prata", "../fonts/PrataRegular", 400, normal);
+
+// PlayfairDisplay
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplayRegular", 400, normal);
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplayBold", 700, normal);
+
