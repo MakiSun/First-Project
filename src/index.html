@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="uk" class="page">
 
-@include('partials/head.html')
+@include('./partials/head.html')
 
-<body class="page__body">
-  <div class="site-container">
-    @include('partials/header.html')
-    @include('partials/hero.html')
-    @include('partials/choice.html')
-    @include('partials/about.html')
-    @include('partials/social.html')
-    @include('partials/footer.html')
+<body>
+  <div class="wrapper">
+      @include('./partials/header.html', {
+        "headerMain": "wrapper__header",
+        "headerIndent": "wrapper__list",
+      })
+      @include('./partials/hero.html', {
+        "heroMain": "wrapper__hero",
+        "heroContent": "wrapper__hero-content",
+      })
+      @include('./partials/tech.html', {
+        "techContainer": "tech__block",
+      })
+      @include('./partials/future.html', {
+        "futureContainer": "future__block",
+      })
+      @include('./partials/footer.html', {
+
+      })
   </div>
 </body>
 

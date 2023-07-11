@@ -5,11 +5,9 @@
 @import "settings";
 
 // Подключення компонентів
-@import "./components/header";
-@import "./components/hero";
-@import "./components/choice";
-@import "./components/about";
-@import "./components/social";
-@import "./components/footer";
-
+@import "components/_header";
+@import "components/_hero";
+@import "components/_tech";
+@import "components/future";
+@import "components/_footer";
 

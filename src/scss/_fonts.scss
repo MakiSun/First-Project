@@ -1,13 +1,9 @@
-// Roboto
-@include font-face("Roboto", "../fonts/RobotoLight", 300, normal);
-@include font-face("Roboto", "../fonts/RobotoRegular", 400, normal);
-@include font-face("Roboto", "../fonts/RobotoMedium", 500, normal);
-@include font-face("Roboto", "../fonts/RobotoBold", 700, normal);
+// Opne Sans
+@include font-face("Open Sans", "../fonts/OpenSansRegular", 400, normal);
+@include font-face("Open Sans", "../fonts/OpenSansBold", 700, normal);
 
-// Prata
-@include font-face("Prata", "../fonts/PrataRegular", 400, normal);
-
-// PlayfairDisplay
-@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplayRegular", 400, normal);
-@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplayBold", 700, normal);
-
+// Mulish
+@include font-face("Mulish", "../fonts/MulishRegular", 400, normal);
+@include font-face("Mulish", "../fonts/MulishSemiBold", 600, normal);
+@include font-face("Mulish", "../fonts/MulishBold", 700, normal);
+@include font-face("Mulish", "../fonts/MulishExtraBold", 800, normal);

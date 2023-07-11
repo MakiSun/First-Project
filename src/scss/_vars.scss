@@ -1,23 +1,22 @@
 
   // base
-  $font-family1: "Roboto", sans-serif;
-  $font-family2: "Prata", sans-serif;
-  $font-family3: "Playfair Display", sans-serif;
-  $content-width: 1300px;
+  $font-family-1: "Open Sans", sans-serif;
+  $font-family-2: "Mulish", sans-serif;
+  $content-width: 1360px;
   $container-land: 40px;
   $container-width: calc($content-width + $container-land * 2);
 
   // colors
-  $dark-color: #1B1A17;
   $black-color: #000;
-  $price-color:  rgba(27, 26, 23, 0.82);
-  $white-color: #fff;
-  $light-color: #F7F5EF;
-  $accent-color: #444240;
-  $main-color: rgba(85, 82, 72, 1);
-  $footer-color: rgba(255, 255, 255, 0.75);
-  $addit-color: #D4B098;
-  $border-color: #C4C0B6;
-  $vision-color: #E6C8B4;
-  $line-color: #8B8371;
-  $block-color: #F7F5EF;
+  $gray-color: #454654;
+  $red-color: #EB3F57;
+  $white-color: #F5F5FA;
+
+  // Gradients
+  $red-brown-start: #E83F57;
+  $red-brown-end: #8C3945;
+
+
+  $red-purple-start: #DE3C5D;
+  $red-purple-end: #110943;
+

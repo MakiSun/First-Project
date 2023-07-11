@@ -7,7 +7,7 @@
 }
 
 @mixin lg {
-  @media (max-width: (1420px)) {
+  @media (max-width: (1360px)) {
     @content;
   }
 }
@@ -20,20 +20,14 @@
 }
 
 @mixin sm {
-  @media (max-width: (940px)) {
-    @content;
-  }
-}
-
-@mixin sm-min {
-    @media (min-width: (910px)) {
+  @media (max-width: (1130px)) {
     @content;
   }
 }
 
 
 @mixin xs {
-  @media (max-width: (760px)) {
+  @media (max-width: (768px)) {
     @content;
   }
 }

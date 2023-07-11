@@ -6,20 +6,72 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // border: solid 1px;
+  // border: solid black 1px;
 }
 
 .page {
   height: 100%;
-  font-family: $font-family1;
+  font-family: $font-family-1;
+  font-family: $font-family-2;
   -webkit-text-size-adjust: 100%;
 }
 
-.page__body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100%;
-  font-size: 16px;
+.wrapper {
+  min-width: 360px;
+  overflow: hidden;
+  background-color: #F5F5FA;
+}
+
+.wrapper__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.wrapper__list {
+  position: relative;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+// ===================
+
+.wrapper__hero {
+  position: relative;
+  height: 100vh;
+  @include flex-all-center;
+  margin-bottom: 70px;
+}
+
+.wrapper__hero-content {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+// ===================
+
+.tech__block {
+  height: 100%;
+  position: relative;
+  margin-bottom: 250px;
+  @include lg {
+    left: 1.5%;
+  }
+}
+
+// ===================
+
+.future__block {
+  position: relative;
+  margin-bottom: 250px;
+  @include lg {
+    display: flex;
+    flex-direction: column;
+    left: 1.5%;
+  }
 }
 
 img {
@@ -30,6 +82,7 @@ img {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 .is-hidden {

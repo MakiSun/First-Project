@@ -1,73 +1,19 @@
-<header class="header">
+<header class="header @headerMain">
   <div class="header__container container">
-    <div class="header__top">
-      <div class="header__logo">
-        <img class="header__logo-img" src="../img/header/logo.png" alt="Logo">
-        <a id="logo" class="header__title" href="#logo">CONQUEST</a>
+    <div class="header__nav">
+      <img class="header__logo" src="../img/header/logo.png" alt="Indium Technologies">
+      <ul class="header__items">
+        <li class="header__list @headerIndent"><a href="#!" class="header__link">Home</a></li>
+        <li class="header__list @headerIndent"><a href="#!" class="header__link">About Us</a></li>
+        <li class="header__list @headerIndent"><a href="#!" class="header__link">Services</a></li>
+        <li class="header__list @headerIndent"><a href="#!" class="header__link">Careers</a></li>
+        <li class="header__list @headerIndent"><a href="#!" class="header__link btn-red">CONTACT US</a></li>
+      </ul>
+      <div class="header__burger burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="header__nav">
-        <ul class="header__items ">
-          <li class="header__list">
-            <a class="header__link" href="#katalog" data-scroll>Каталог</a>
-            <ul class="header__sub-items">
-              <li class="header__sub-list"><a href="#!" class="header__sub-link">Розділ сторінки №1</a></li>
-              <li class="header__sub-list"><a href="#!" class="header__sub-link">Розділ сторінки №2</a></li>
-              <li class="header__sub-list"><a href="#!" class="header__sub-link">Розділ сторінки №3</a></li>
-              <li class="header__sub-list"><a href="#!" class="header__sub-link">Розділ сторінки №4</a></li>
-            </ul>
-          </li>
-          <li class="header__list">
-            <a class="header__link" href="#action" data-scroll>Акція</a>
-          </li>
-          <li class="header__list">
-            <a class="header__link" href="#delivery" data-scroll>Доставка</a>
-          </li>
-          <li class="header__list">
-            <a class="header__link" data-goto=".social__section" href="#!" data-scroll>Контакти</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header__search">
-
-        <div class="header__icon">
-          <a href="#!">
-            <svg width="21" height="21" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.8041 14.8638L11.9576 11.0172C12.911 9.85475 13.4857 8.36576 13.4857 6.74289C13.4857 3.02042 10.4653 0 6.74286 0C3.01714 0 0 3.02042 0 6.74289C0 10.4654 3.01714 13.4858 6.74286 13.4858C8.36571 13.4858 9.85143 12.9144 11.0139 11.9609L14.8604 15.8042C15.1216 16.0654 15.5429 16.0654 15.8041 15.8042C16.0653 15.5462 16.0653 15.1217 15.8041 14.8638ZM6.74286 12.1437C3.76163 12.1437 1.33878 9.72087 1.33878 6.74289C1.33878 3.76492 3.76163 1.33878 6.74286 1.33878C9.72082 1.33878 12.1469 3.76492 12.1469 6.74289C12.1469 9.72087 9.72082 12.1437 6.74286 12.1437Z"
-                fill="#1B1A17" />
-            </svg>
-          </a>
-        </div>
-
-        <div class="header__icon">
-          <a href="#!">
-            <svg width="22" height="21" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.9686 5.77107C19.6912 3.00626 17.5306 1.00033 14.8266 1.00033C13.0251 1.00033 11.3757 1.87836 10.4475 3.28559C9.5278 1.86016 7.94595 1 6.17336 1C3.4697 1 1.30868 3.00593 1.0317 5.77074C1.00978 5.89286 0.919889 6.53558 1.19321 7.58372C1.58712 9.09552 2.49699 10.4706 3.82378 11.5595L10.4431 17.0001L17.1761 11.5598C18.5029 10.4706 19.4128 9.09586 19.8067 7.58372C20.08 6.53591 19.9902 5.89319 19.9686 5.77107ZM19.0953 7.43214C18.7357 8.81289 17.9022 10.0709 16.6872 11.0677L10.4475 16.1098L4.31489 11.069C3.09772 10.0702 2.26459 8.81256 1.90466 7.43181C1.64595 6.43993 1.75229 5.87962 1.75265 5.87598L1.75813 5.84255C1.99565 3.42028 3.85229 1.66191 6.17336 1.66191C7.88602 1.66191 9.39369 2.61507 10.1092 4.14905L10.4457 4.87153L10.7822 4.14905C11.4864 2.63857 13.0737 1.66224 14.8269 1.66224C17.1476 1.66224 19.0046 3.42062 19.2469 5.87433C19.2476 5.87962 19.354 6.44026 19.0953 7.43214Z"
-                fill="#1B1A17" stroke="#1B1A17" stroke-width="0.75" />
-            </svg>
-          </a>
-        </div>
-
-        <div class="header__icon">
-          <a href="#!">
-            <svg width="21" height="21" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M17.8961 3.05166C17.7931 2.91219 17.6273 2.82598 17.4472 2.81871L6.28162 2.36415C5.96126 2.35091 5.69355 2.58451 5.67985 2.88567C5.66624 3.18672 5.91317 3.44109 6.232 3.45403L16.6416 3.87785L14.5949 9.90927H5.48658L3.84103 1.44689C3.80486 1.26142 3.67004 1.10669 3.4841 1.03779L0.788965 0.037775C0.491928 -0.072061 0.156743 0.065738 0.0400874 0.345939C-0.0763672 0.626293 0.0694931 0.943056 0.36637 1.05323L2.76277 1.94238L4.43736 10.5533C4.48784 10.8122 4.72671 11.0002 5.0055 11.0002H5.28328L4.64896 12.6643C4.59587 12.8037 4.61775 12.9585 4.7081 13.0796C4.79833 13.2007 4.94507 13.2728 5.10173 13.2728H5.54664C5.27095 13.5625 5.10173 13.9441 5.10173 14.3637C5.10173 15.266 5.87913 16.0001 6.83433 16.0001C7.78953 16.0001 8.56693 15.266 8.56693 14.3637C8.56693 13.9441 8.3977 13.5625 8.12206 13.2728H11.8996C11.6237 13.5625 11.4546 13.9441 11.4546 14.3637C11.4546 15.266 12.2318 16.0001 13.1872 16.0001C14.1426 16.0001 14.9198 15.266 14.9198 14.3637C14.9198 13.9441 14.7506 13.5625 14.475 13.2728H15.016C15.2819 13.2728 15.4973 13.0693 15.4973 12.8182C15.4973 12.5671 15.2819 12.3637 15.016 12.3637H5.78652L6.30624 11H15.016C15.2672 11 15.4894 10.8468 15.5659 10.6211L17.9723 3.53C18.0275 3.36816 17.9992 3.19121 17.8961 3.05166ZM6.83437 15.0912C6.40968 15.0912 6.0643 14.765 6.0643 14.3639C6.0643 13.9628 6.40968 13.6366 6.83437 13.6366C7.25906 13.6366 7.6044 13.9628 7.6044 14.3639C7.6044 14.765 7.25906 15.0912 6.83437 15.0912ZM13.1872 15.0912C12.7625 15.0912 12.4171 14.765 12.4171 14.3639C12.4171 13.9628 12.7625 13.6366 13.1872 13.6366C13.6119 13.6366 13.9572 13.9628 13.9572 14.3639C13.9572 14.765 13.6119 15.0912 13.1872 15.0912Z"
-                fill="#1B1A17" />
-            </svg>
-          </a>
-        </div>
-
-        <div class="burger__menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-
-
-
     </div>
   </div>
 </header>
